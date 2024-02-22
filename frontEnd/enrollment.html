@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="enrollment.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Student Enrollment Form</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="">
+            ABC SCHOOL
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li> 
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+ <form id="enrollmentForm">
+  <div>
+   <label for="fname">First Name:</label>
+   <input type="text" id="fname" name="fname" required>
+  </div>
+  <div>
+   <label for="mname">Middle Name:</label>
+   <input type="text" id="mname" name="mname">
+  </div>
+  <div>
+   <label for="lname">Last Name:</label>
+   <input type="text" id="lname" name="lname" required>
+  </div>
+  <div>
+   <label for="fees">Total Fees:</label>
+   <input type="number" id="fees" name="fees" min="1" required>
+  </div>
+  <div>
+   <label for="age">Age:</label>
+   <input type="number" id="age" name="age"  min="5" max="12" required>
+  </div>
+  <div>
+   <label for="gender">Gender:</label>
+   <select id="gender" name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="female">Others</option>
+   </select>
+  </div>
+  <div>
+   <label for="classAdmission">Class Admission:</label>
+   <input type="number" id="classAdmission" name="classAdmission" min="1" max="5" required>
+  </div>
+  <div>
+   <label for="address">Address:</label>
+   <textarea id="address" name="address" required></textarea>
+  </div>
+  <div>
+   <input type="submit" value="Submit">
+  </div>
+ </form>
+ <!-- <script src="enrollment.js"></script> -->
+ <footer>
+    <p>&copy; ABC School. All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+</footer>  
+</body>
+</html>
